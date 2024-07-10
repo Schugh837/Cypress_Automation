@@ -3,6 +3,7 @@ describe('My testCaseOnCE',function()
     it('Loginto in website' , function() {
     
     cy.visit('https://staging.clubemploy.co.uk/');
+   
     cy.get('#portal-login').click()
     cy.get('#staticEmail').should('exist').and('be.visible').type('kulbir@42works.net');
     cy.get('#pass_log_id').should('exist').and('be.visible').type('kulbir@1A');
