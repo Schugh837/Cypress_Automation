@@ -4,7 +4,7 @@ describe('GET Posts', () => {
       cy.request('https://jsonplaceholder.typicode.com/posts')
         .then(response => {
           // Assert that the response status is 200 (OK)
-          expect(response.status).to.eq(200);
+          expect(response.status).to.eq(200 );
   
           // Log the response data
           console.log(response.body);  // Response body contains the JSON data
